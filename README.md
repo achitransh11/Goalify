@@ -20,12 +20,11 @@ git clone https://github.com/achitransh11/Goalify.git
 cd Goalify
 2. Install Dependencies
 Run the following command to install all the necessary dependencies:
-
 npm install
 3. Start the Development Server
 Once the dependencies are installed, start the development server:
 
-npm start
+  npm start
 The app will be available at http://localhost:3000 by default.
 
 4. Build for Production
