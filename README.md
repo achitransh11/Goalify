@@ -1,4 +1,4 @@
-Goalify
+# Goalify
 Goalify is a React application built using TypeScript, Redux, and React Router for managing and displaying user goals. This project also includes a robust testing setup with Jest and React Testing Library.
 
 Features
