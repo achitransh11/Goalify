@@ -1,0 +1,58 @@
+/* header.styles.css */
+
+/* Parent Header Container */
+.parent_header-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Vertically center the items */
+    padding: 16px 32px; /* Padding for the header */
+
+    color: black; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+  }
+  
+  /* Styling for Logo */
+  .App-logo img {
+    height: 40px; /* Set logo size */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+  
+  /* Right section: Login/Logout Buttons */
+  .right-section ul {
+    display: flex; /* Align the list items horizontally */
+    gap: 20px; /* Space between the items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove bullet points */
+  }
+  
+  /* Styling for list items (Login/Logout) */
+  .right-section li {
+    font-size: 16px; /* Font size for the list items */
+    cursor: pointer; /* Make items clickable */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .right-section li:hover {
+    color: #e87f7f; /* Light gray color on hover */
+  }
+  
+  /* Responsive Styling for Small Screens */
+  @media (max-width: 768px) {
+    .parent_header-container {
+      padding: 12px 20px; /* Less padding on small screens */
+    }
+  
+    .App-logo img {
+      height: 30px; /* Smaller logo size for smaller screens */
+    }
+  
+    .right-section ul {
+      gap: 10px; /* Smaller gap between the items */
+    }
+  
+    .right-section li {
+      font-size: 14px; /* Smaller font size on small screens */
+    }
+  }
+  

@@ -1,0 +1,124 @@
+   /* Container for the task list */
+.task-list-container {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input and Add Task button */
+.task-input-section {
+  position: sticky;
+  top: 0;
+  background-color: #f4f4f9; /* Match the container background */
+  padding: 20px;
+  z-index: 10;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Optional shadow for better visibility */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #d81d1da5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d81d1da5;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px; /* Limit the height of the task list */
+  overflow-y: auto; /* Enable scrolling when content overflows */
+}
+
+.view-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.view-list li:hover {
+  transform: scale(1.02);
+}
+
+.view-list li.completed {
+  color: #b0b0b0;
+  text-decoration: line-through;
+}
+
+.view-list li span {
+  flex-grow: 1;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
+button {
+  margin-left: 10px;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+button.completed {
+  background-color: #56b167;
+}
+
+button.delete {
+  background-color: #dc3545;
+}
+
+button.edit,
+button.delete {
+  background-color: #d81d1da5;
+}
+
+button.edit:hover,
+button.delete:hover {
+  background-color: #d81d1da5;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0;
+  padding-bottom: 10px;
+}

@@ -1,0 +1,78 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* Loading spinner styles */
+.loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #d81d1d;
+  text-align: center;
+}
+
+.loading-spinner::after {
+  content: '...';
+  animation: dot-blink 1s steps(5, end) infinite;
+}
+
+@keyframes dot-blink {
+  0% { content: '...'; }
+  25% { content: '..'; }
+  50% { content: '.'; }
+  75% { content: '..'; }
+  100% { content: '......'; }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.778);
+  color: beige;
+  height: 7vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  width: 100%; /* Ensure full width of the viewport */
+  position: relative;
+}
+
+footer p {
+  margin: 0; /* Remove default margin from <p> */
+}
